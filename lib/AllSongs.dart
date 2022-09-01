@@ -15,7 +15,7 @@ class _AllSongsState extends State<AllSongs> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("All Song"),),
+      appBar: AppBar(title: Text("All Songs"),),
       body: ListView.builder(itemBuilder: (context, index) {
         return ListTile(onTap: () async {
           await player.play(DeviceFileSource(Model.songlist[index].data));
